@@ -47,6 +47,19 @@ const mul = function (a){
 
 console.log(mul(2)(3)(4));
 
+// infinite curring in javasscript
+// add(1)(2)(3)(4)(5)......(). It should give the output as 15.
+
+const add = function (a) {
+    return function (b) {
+        if (b) {
+            return add(a + b);
+        } return a;
+    }
+}
+console.log(add(1)(2)(3)(4)(5)(5)());
+
+
 //  Write a function that would allow you to do this?
 /*  
     let addSix = createBase(6);
