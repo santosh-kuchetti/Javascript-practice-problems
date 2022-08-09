@@ -113,7 +113,7 @@ let obj2 = {
 }
 
 // foo();   //  "global"
-// obj1.foo();   //  "obj1"
+// obj1.foo();   //  "obj1".  here obj1.foo() means, in the function foo, in 'this.bar' this refers to the obj1. now this.bar means, obj1.bar. obj1.bar is obj1.
 // foo.call(obj2);   //  "obj2"
 // new foo();     //   undefined
 
